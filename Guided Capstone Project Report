@@ -1,0 +1,51 @@
+Guided Capstone Project Report
+Big Mountain Resort: Data‑Driven Recommendations
+This report summarizes the analysis and modeling performed to evaluate how operational changes at Big Mountain Resort may influence ticket prices and revenue. Using the provided ski resort dataset, exploratory visualizations, and a predictive model, I assessed how key features—such as number of runs, vertical drop, chairlifts, and snow‑making capacity—affect Big Mountain’s competitive position and potential revenue outcomes.
+---
+1. Feature Distribution Insights
+To understand how Big Mountain compares to other resorts, I created histograms for several features and added reference lines marking Big Mountain’s values. These visualizations highlighted where the resort stands relative to competitors.
+Key observations:
+• Runs: Big Mountain has fewer runs than many high‑performing resorts, placing it below the median.
+• Vertical Drop: The resort’s vertical drop is also on the lower side, which may limit its appeal to advanced skiers.
+• Total Chairs: Chairlift capacity is moderate but not exceptional.
+• Snow_Making_ac: Snow‑making acreage is relatively limited, which may affect reliability during low‑snow seasons.
+These insights guided the scenario modeling that followed.
+---
+2. Scenario Modeling: Ticket Price Impact
+Using the predict_increase function, I simulated how changes to specific features would affect the model’s predicted ticket price.
+Scenario 2: Improvements to Runs, Vertical Drop, and Chairlifts
+Changes applied:
+• +1 Run
+• +150 ft Vertical Drop
+• +1 Chairlift
+Result:
+The model predicted a positive increase in ticket price. When scaled by expected visitors (each buying 5 tickets), the revenue impact was substantial.
+Scenario 3: Scenario 2 + Increased Snow‑Making Capacity
+Changes applied:
+• +1 Run
+• +150 ft Vertical Drop
+• +1 Chairlift
+• +2 acres Snow_Making_ac
+Result:
+Adding snow‑making capacity further increased the predicted ticket price and revenue. This suggests that snow‑making is a meaningful driver of perceived resort value.
+---
+3. Revenue Impact Visualization
+I created two side‑by‑side plots:
+1. Ticket price change vs. number of runs closed
+2. Revenue change vs. number of runs closed
+These plots showed a clear negative relationship: closing more runs reduces both ticket price and revenue. This reinforces the importance of maintaining terrain availability.
+---
+4. Recommendations
+Based on the analysis, I recommend the following actions for Big Mountain Resort:
+1. Invest in Snow‑Making Capacity
+Increasing snow‑making acreage produced a measurable improvement in predicted ticket price and revenue. This investment also reduces risk during poor snowfall seasons.
+2. Expand Terrain Where Feasible
+Adding even a single run and increasing vertical drop (where possible) improved the model’s valuation of the resort. Terrain expansion enhances the resort’s competitive position.
+3. Add Chairlift Capacity
+Increasing total chairs improves guest flow and reduces wait times, contributing to higher perceived value and supporting higher ticket prices.
+4. Avoid Run Closures Whenever Possible
+The scenario analysis showed that closing runs significantly reduces revenue. Prioritizing maintenance and snow coverage to keep terrain open is financially beneficial.
+---
+5. Conclusion
+The modeling results indicate that strategic investments in terrain, snow‑making, and lift infrastructure can meaningfully increase Big Mountain’s ticket prices and revenue. These improvements also enhance guest experience and strengthen the resort’s market position.
+This data‑driven approach provides a clear roadmap for operational decisions that align with both customer expectations and financial goals.
